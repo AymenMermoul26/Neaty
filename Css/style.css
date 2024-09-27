@@ -1,0 +1,72 @@
+    /* Start Globle */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --main-clr: #1768af;
+    }
+
+    body {
+        width: 100vh;
+        font-family: "Work Sans", system-ui;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    /* End Globle */
+
+    /* start sidebar */
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        background-color: var(--main-clr);
+    }
+
+    aside .logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    aside .logo img {
+        width: 80px;
+    }
+
+    aside .logo h1 {
+        font-weight: 400;
+        color: #fff;
+    }
+
+    aside ul {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    aside li {
+        width: 100%;
+        ;
+    }
+
+    aside a {
+        color: bisque;
+        text-transform: capitalize;
+    }
+
+    /* end sidebar */
