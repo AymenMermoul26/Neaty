@@ -10,6 +10,10 @@
         --secondary-clr: #777;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: "Work Sans", system-ui;
     }
