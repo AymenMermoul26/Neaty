@@ -7,6 +7,7 @@
 
     :root {
         --main-clr: #1768af;
+        --secondary-clr: #777;
     }
 
     body {
@@ -24,6 +25,12 @@
         font-weight: 300;
         transition: color .4s;
 
+    }
+
+    .section {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 60px;
     }
 
     /* End Globle */
@@ -49,7 +56,7 @@
     }
 
     .aside .logo {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .aside .logo h1 {
@@ -59,10 +66,10 @@
         text-transform: capitalize;
     }
 
+
     .aside .links li {
         margin-bottom: 40px;
         font-size: 20px;
-
     }
 
     .aside .links li a:hover {
@@ -70,9 +77,122 @@
     }
 
     /* end said bar */
-    /* start content */
-    .content {
+    /* start content container */
+
+    .content-container {
+        width: 70%;
         margin-left: 30%;
     }
 
-    /* end content */
+    /* start header section */
+    .header {
+        width: 100%;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    /* end header section */
+
+    /* start welcom section */
+
+
+    .welcome h1 {
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--main-clr);
+        margin-bottom: 35px;
+        font-size: 3rem;
+
+    }
+
+    .welcome p {
+        line-height: 1.7;
+        text-transform: capitalize;
+        color: var(--secondary-clr);
+    }
+
+    /* end welcom section */
+    /* start about section */
+    .about {
+        display: flex;
+    }
+
+    .about img {
+        width: 200px;
+        margin-right: 25px;
+        height: 100%;
+    }
+
+    .about h2 {
+        text-transform: capitalize;
+        color: var(--main-clr);
+        font-weight: 400;
+        margin-bottom: 35px;
+    }
+
+    .about p {
+        color: var(--secondary-clr);
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    .about button {
+        width: 140px;
+
+        padding: 15px 20px;
+        border: none;
+        background-color: var(--main-clr);
+        color: #fff;
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: background-color .4s;
+    }
+
+    .about button:hover {
+        background-color: #3a91dd;
+    }
+
+    /* end about section */
+    /* start gallery-one section */
+    .gallery-one h2,
+    .gallery-two h2,
+    .gallery-three h2 {
+        font-weight: 500;
+        color: var(--main-clr);
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+
+    .gallery-one .gallery-one-image {
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-one .gallery-one-image img,
+    .gallery-two .gallery-two-image img,
+    .gallery-two .gallery-three-image img {
+        width: 100%;
+    }
+
+    /* end gallery-one section */
+    /* start gallery-two section  */
+    .gallery-two .gallery-two-image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    /* end gallery-two section  */
+    /* start gallery-three section  */
+    .gallery-two .gallery-three-image {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    /* end gallery-three section  */
+    /* end content container */
